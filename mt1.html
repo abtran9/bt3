@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Máy Tính Valio</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+    <h2>MÁY----TÍNH----VALIO</h2>
+    <h6>Dòng 075 Vn plus</h6>
+    <form>
+        <input type="text" id="soA" value="">
+        &nbsp;&nbsp;&nbsp;
+        <input type="text" id="soB" value=""> <br> <br>
+        <input type="button" value= "CỘNG (+)" onclick="calculation(1)">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value="TRỪ (-)" onclick="calculation(2)">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value="NHÂN (x)" onclick="calculation(3)">
+        &nbsp;&nbsp;&nbsp;
+        <input type="button" value="CHIA (÷)" onclick="calculation(4)">
+        <p id="kq"></p>
+        </form>
+    <script>
+        let result;
+        let message = "";
+        function calculation(id){
+            let soA= +document.getElementById('soA').value;
+            let soB= +document.getElementById('soB').value;
+            if(id == 1){
+                result = soA + soB;
+                message = '= ' + ' ' + result;
+            }
+            if(id == 2){
+                result = soA - soB;
+                message = '= ' + ' ' + result;
+            }
+            if(id == 3){
+                result = soA * soB;
+                message = '= ' + ' ' + result;
+            }
+            if(id == 4){
+                result = soA / soB;
+                message = '= ' + ' ' + result;
+            }
+
+            document.getElementById("kq").innerHTML = message;
+        }
+    </script>
+</body>
+</html>

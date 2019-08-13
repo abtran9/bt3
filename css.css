@@ -1,0 +1,31 @@
+input {
+    width: 65px;
+    height: auto;
+}
+input{color: rgb(13, 47, 121)}
+table {
+    border: 1px solid rgb(0, 0, 0);
+    }
+.btn1 {
+    background-color: rgb(252, 220, 115)
+}
+.btn2 {
+    background-color: rgb(255, 102, 31)
+}
+.btn3 {
+    background-color: rgb(247, 137, 110)
+}
+.btn{
+    background-color: rgb(219, 211, 248)
+}
+button {
+    width: 100px;
+    height: auto;
+    background-color: rgb(154, 154, 231)
+}
+div {
+    color: rgb(253, 255, 242);
+}
+.btn5 {
+    background-color: rgb(115, 235, 195)
+}
